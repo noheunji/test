@@ -1,0 +1,10 @@
+mixin exhibition(post)
+    div
+        h4
+            a(href=`/exhibition/post/${post.id}`)=post.title
+        ul
+            li #{post.place} 장소.
+            li #{post.interest} 분야.
+            li #{post.view} 진행중.
+            li #{post.date} 전시기간.
+            li #{post.id}.
